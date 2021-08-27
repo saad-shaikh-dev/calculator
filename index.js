@@ -1,6 +1,8 @@
 // get result
 function getResult() {
-  document.getElementById("result").value = eval(document.getElementById("calculation").value);
+  document.getElementById("result").value = eval(
+    document.getElementById("calculation").value
+  );
 }
 // input function
 document.getElementById("zero").addEventListener("click", () => {
@@ -65,6 +67,6 @@ document.getElementById("percentage").addEventListener("click", () => {
 
 //clear calculation
 document.getElementById("clear").addEventListener("click", () => {
-  document.getElementById("calculation").value = "0";
-  getResult();
+  document.getElementById("calculation").value = "";
+  document.getElementById("result").value = 0;
 });
