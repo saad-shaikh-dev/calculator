@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
     <div class="calculator">
@@ -15,31 +15,73 @@
           <output id="result" />
         </section>
         <section class="calculation">
-          <output id="calculation" />
+          <input id="calculation" />
         </section>
       </section>
       <section class="keyboard">
         <button>C</button>
         <button>( )</button>
-        <button>%</button>
-        <button>/</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>X</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-        <button>+/-</button>
-        <button>0</button>
-        <button>.</button>
-        <button>=</button>
+        <button id="percentage">%</button>
+        <button id="divide">/</button>
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="multiply">X</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="subtract">-</button>
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="add">+</button>
+        <button id="change-sign">+/-</button>
+        <button id="zero">0</button>
+        <button id="period">.</button>
+        <button id="equal">=</button>
       </section>
     </div>
+
+    <script>
+      document.getElementById("one").addEventListener("click", () => {
+        document.getElementById("calculation").value += "1";
+      });
+      document.getElementById("two").addEventListener("click", () => {
+        document.getElementById("calculation").value += "2";
+      });
+      document.getElementById("three").addEventListener("click", () => {
+        document.getElementById("calculation").value += "3";
+      });
+      document.getElementById("four").addEventListener("click", () => {
+        document.getElementById("calculation").value += "4";
+      });
+      document.getElementById("five").addEventListener("click", () => {
+        document.getElementById("calculation").value += "5";
+      });
+      document.getElementById("six").addEventListener("click", () => {
+        document.getElementById("calculation").value += "6";
+      });
+      document.getElementById("seven").addEventListener("click", () => {
+        document.getElementById("calculation").value += "7";
+      });
+      document.getElementById("eight").addEventListener("click", () => {
+        document.getElementById("calculation").value += "8";
+      });
+      document.getElementById("nine").addEventListener("click", () => {
+        document.getElementById("calculation").value += "9";
+      });
+      document.getElementById("add").addEventListener("click", () => {
+        document.getElementById("calculation").value += "+";
+      });
+      document.getElementById("subtract").addEventListener("click", () => {
+        document.getElementById("calculation").value += "-";
+      });
+      document.getElementById("multiply").addEventListener("click", () => {
+        document.getElementById("calculation").value += "*";
+      });
+      document.getElementById("divide").addEventListener("click", () => {
+        document.getElementById("calculation").value += "/";
+      });
+    </script>
   </body>
 </html>
