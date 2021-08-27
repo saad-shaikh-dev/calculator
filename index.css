@@ -60,6 +60,13 @@ body {
   height: 40px;
   font-size: 25px;
 }
+#calculation {
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-align: right;
+  font-size: inherit;
+}
 .keyboard {
   padding: 20px 10px;
   display: grid;
