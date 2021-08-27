@@ -40,6 +40,9 @@ document.getElementById("multiply").addEventListener("click", () => {
 document.getElementById("divide").addEventListener("click", () => {
   document.getElementById("calculation").value += "/";
 });
+document.getElementById("percentage").addEventListener("click", () => {
+  document.getElementById("calculation").value += "*(1/100)";
+});
 
 //clear calculation
 document.getElementById("clear").addEventListener("click", () => {
