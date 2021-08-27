@@ -1,90 +1,109 @@
 :root {
-	--main-color: darkblue;
-	--secondary-color: blue;
-	--tertiary-color: #318ce7;
-	--dark-color: #444;
-	--light-color: #fafafa;
+  --main-color: darkblue;
+  --secondary-color: blue;
+  --tertiary-color: #318ce7;
+  --dark-color: #444;
+  --light-color: #fafafa;
 }
 body {
-	font-family: "Montserrat", sans-serif;
-	background-color: var(--light-color);
-	color: var(--dark-color);
-	margin-top: 0px;
-	margin-bottom: 0px;
-	display: flex;
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 .calculator {
-	
-	box-shadow: var(--main-color) 1px 1px 1em;
-	border-radius: 1em;
-	height: fit-content;
-	width: 370px;
-	background-image: linear-gradient(-135deg,var(--secondary-color),var(--tertiary-color),var(--secondary-color));
-	overflow: hidden;
+  box-shadow: var(--main-color) 1px 1px 1em;
+  border-radius: 1em;
+  height: fit-content;
+  width: 370px;
+  background-image: linear-gradient(
+    -135deg,
+    var(--secondary-color),
+    var(--tertiary-color),
+    var(--secondary-color)
+  );
+  overflow: hidden;
 }
 .output {
-	background-image: linear-gradient(-45deg,var(--main-color),var(--secondary-color));
-	color: var(--tertiary-color);
-	padding: 2em 0px;
+  background-image: linear-gradient(
+    -45deg,
+    var(--main-color),
+    var(--secondary-color)
+  );
+  color: var(--tertiary-color);
+  padding: 2em 0px;
 }
-.result,.calculation {
-	display: flex;
-	flex-direction: row-reverse;
-	align-content: center;
-	align-items: center;
-	justify-content: end;
+.result,
+.calculation {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  align-items: center;
+  justify-content: end;
 }
-#result,#calculation {
-	padding: 0.3em 10px;
-	background-color: transparent;
-	color: var(--light-color);
-	border: none;
-	text-align: right;
-	font-size: inherit;
+#result,
+#calculation {
+  padding: 0.3em 10px;
+  background-color: transparent;
+  color: var(--light-color);
+  border: none;
+  text-align: right;
+  font-size: inherit;
 }
 ::placeholder {
   color: var(--light-color);
 }
 #result {
-	font-size: 1.3em;
+  font-size: 1.3em;
 }
 .result {
-	height: 50px;
-	font-size: 30px;
+  height: 50px;
+  font-size: 30px;
 }
 .calculation {
-	height: 40px;
-	font-size: 25px;
+  height: 40px;
+  font-size: 25px;
 }
 .keyboard {
-	padding: 20px 10px;
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-template-rows: auto auto auto auto auto;
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
 }
 button {
-	margin: 0.2em 0.2em;
-	border: none;
-	border-radius: 0.2em;
-	height: 40px;
-	opacity: 50%;
-	color: var(--main-color);
-	font-size: 15px;
-	font-weight: bolder;
+  margin: 0.2em 0.2em;
+  border: none;
+  border-radius: 0.2em;
+  height: 40px;
+  opacity: 50%;
+  color: var(--main-color);
+  font-size: 15px;
+  font-weight: bolder;
 }
 button:hover {
-	background-image: linear-gradient(-45deg,var(--secondary-color),var(--tertiary-color),var(--secondary-color));
-	color: var(--light-color);
-	box-shadow: var(--main-color) 1px 1px 1em;
-	transition-duration: 400ms;
+  background-image: linear-gradient(
+    -45deg,
+    var(--secondary-color),
+    var(--tertiary-color),
+    var(--secondary-color)
+  );
+  color: var(--light-color);
+  box-shadow: var(--main-color) 1px 1px 1em;
+  transition-duration: 400ms;
 }
 button:active {
-	background-image: linear-gradient(-45deg,var(--main-color),var(--secondary-color));
-	color: var(--light-color);
-	opacity: 100%;
-	transition-duration: 400ms;
+  background-image: linear-gradient(
+    -45deg,
+    var(--main-color),
+    var(--secondary-color)
+  );
+  color: var(--light-color);
+  opacity: 100%;
+  transition-duration: 400ms;
 }
