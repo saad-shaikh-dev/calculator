@@ -16,11 +16,12 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  word-wrap: break-word;
 }
 .calculator {
   box-shadow: var(--main-color) 1px 1px 1em;
   border-radius: 1em;
-  height: fit-content;
+  height: max-content;
   width: 370px;
   background-image: linear-gradient(
     -135deg,
@@ -55,6 +56,7 @@ body {
   border: none;
   text-align: right;
   font-size: inherit;
+  width: 370px;
 }
 ::placeholder {
   color: var(--light-color);
@@ -63,11 +65,11 @@ body {
   font-size: 1.3em;
 }
 .result {
-  height: 50px;
+  height: max-content;
   font-size: 30px;
 }
 .calculation {
-  height: 40px;
+  height: max-content;
   font-size: 25px;
 }
 .keyboard {
@@ -86,16 +88,18 @@ button {
   font-size: 15px;
   font-weight: bolder;
 }
-button:hover {
-  background-image: linear-gradient(
-    -45deg,
-    var(--secondary-color),
-    var(--tertiary-color),
-    var(--secondary-color)
-  );
-  color: var(--light-color);
-  box-shadow: var(--main-color) 1px 1px 1em;
-  transition-duration: 400ms;
+@media (hover: hover) {
+  button:hover {
+    background-image: linear-gradient(
+      -45deg,
+      var(--secondary-color),
+      var(--tertiary-color),
+      var(--secondary-color)
+    );
+    color: var(--light-color);
+    box-shadow: var(--main-color) 1px 1px 1em;
+    transition-duration: 400ms;
+  }
 }
 button:active {
   background-image: linear-gradient(
