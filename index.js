@@ -65,7 +65,11 @@ document.getElementById("percentage").addEventListener("click", () => {
   getResult();
 });
 document.getElementById("openBracket").addEventListener("click", () => {
-  document.getElementById("calculation").value += "(";
+  if (document.getElementById("calculation").value.slice(-1) === "+" | "-" | "*" | "/") {
+    document.getElementById("calculation").value += "(";
+  } else {
+    document.getElementById("calculation").value += "*(";
+  }
 });
 document.getElementById("closeBracket").addEventListener("click", () => {
   document.getElementById("calculation").value += ")";
