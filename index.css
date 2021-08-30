@@ -56,7 +56,7 @@ body {
   border: none;
   text-align: right;
   font-size: inherit;
-  width: 370px;
+  width: max-content;
 }
 ::placeholder {
   color: var(--light-color);
