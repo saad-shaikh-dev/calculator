@@ -65,13 +65,18 @@ document.getElementById("percentage").addEventListener("click", () => {
   getResult();
 });
 document.getElementById("openBracket").addEventListener("click", () => {
-  if (document.getElementById("calculation").value.slice(-1) === "+" | "-" | "*" | "/") {
+  const lastLetter = document.getElementById("calculation").value.slice(-1);
+  if (
+    lastLetter === "+" ||
+    lastLetter === "-" ||
+    lastLetter === "*" ||
+    lastLetter === "/"
+  ) {
     document.getElementById("calculation").value += "(";
   } else {
     document.getElementById("calculation").value += "*(";
   }
-});
-document.getElementById("closeBracket").addEventListener("click", () => {
+});document.getElementById("closeBracket").addEventListener("click", () => {
   document.getElementById("calculation").value += ")";
   getResult();
 });
